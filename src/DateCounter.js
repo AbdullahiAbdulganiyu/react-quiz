@@ -48,6 +48,7 @@ function DateCounter() {
 
   const defineStep = function (e) {
     // setStep(Number(e.target.value));
+    dispatch({ type: "setStep", payload: Number(e.target.value) });
   };
 
   const reset = function () {
