@@ -2,6 +2,7 @@ import { useReducer, useState } from "react";
 
 function reducer(state, action) {
   console.log(state, action);
+  return state + action;
 }
 
 function DateCounter() {
