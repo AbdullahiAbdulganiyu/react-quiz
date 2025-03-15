@@ -15,6 +15,7 @@ function DateCounter() {
   date.setDate(date.getDate() + count);
 
   const dec = function () {
+    dispatch(-1);
     // setCount((count) => count - 1);
     // setCount((count) => count - step);
   };
