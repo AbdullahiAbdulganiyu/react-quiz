@@ -5,6 +5,7 @@ function reducer(state, action) {
   // if (action.type === "inc") return state + 1;
   // if (action.type === "dec") return state - 1;
   // if (action.type === "setCount") return action.payload;
+  return { count: 0, step: 1 };
 }
 
 function DateCounter() {
