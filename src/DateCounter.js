@@ -30,6 +30,7 @@ function DateCounter() {
 
   const defineCount = function (e) {
     // setCount(Number(e.target.value));
+    dispatch({ type: "setCount", payload: Number(e.target.value) });
   };
 
   const defineStep = function (e) {
