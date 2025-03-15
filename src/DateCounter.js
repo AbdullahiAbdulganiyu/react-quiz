@@ -1,5 +1,9 @@
 import { useReducer, useState } from "react";
 
+function reducer(state, action) {
+  console.log(state, action);
+}
+
 function DateCounter() {
   // const [count, setCount] = useState(0);
   const [count, dispatch] = useReducer(reducer, 0);
