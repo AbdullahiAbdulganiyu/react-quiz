@@ -11,6 +11,9 @@ function reducer(state, action) {
   switch (action.type) {
     case "dataRecieved":
       return { ...state, questions: action.payload, status: "ready" };
+
+    default:
+      throw new Error("Unknown action");
   }
 }
 
