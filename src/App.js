@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useReducer } from "react";
 import Header from "./Header";
 import Main from "./Main";
 
@@ -7,6 +7,8 @@ const initialState = {};
 function reducer(state, action) {}
 
 export default function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   useEffect(function () {
     fetch("http://localhost:8000/questions")
       .then((res) => res.json())
