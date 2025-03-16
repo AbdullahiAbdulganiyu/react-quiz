@@ -1,6 +1,11 @@
 import { useEffect } from "react";
 import Header from "./Header";
 import Main from "./Main";
+
+const initialState = {};
+
+function reducer(state, action) {}
+
 export default function App() {
   useEffect(function () {
     fetch("http://localhost:8000/questions")
