@@ -27,7 +27,7 @@ function reducer(state, action) {
 export default function App() {
   const [{ questions, status }, dispatch] = useReducer(reducer, initialState);
 
-  const numQuestion = questions.length();
+  const numQuestion = questions.length;
 
   useEffect(function () {
     fetch("http://localhost:8000/questions")
