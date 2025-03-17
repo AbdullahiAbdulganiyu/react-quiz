@@ -20,6 +20,8 @@ function reducer(state, action) {
         ...state,
         status: "error",
       };
+    case "start":
+      return { ...state, status: "active" };
     default:
       throw new Error("Unknown action");
   }
