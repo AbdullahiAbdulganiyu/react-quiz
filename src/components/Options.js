@@ -5,7 +5,7 @@ function Options({ question, dispatch, answer }) {
         <button
           className={`btn btn-option ${index === answer ? "answer" : ""}`}
           key={option}
-          onClick={() => dispatch({ type: "newAswer", payload: index })}
+          onClick={() => dispatch({ type: "newAnswer", payload: index })}
         >
           {option}
         </button>
