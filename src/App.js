@@ -9,6 +9,7 @@ import Questions from "./Questions";
 const initialState = {
   questions: [],
   status: "loading",
+  index: 0,
 };
 
 function reducer(state, action) {
