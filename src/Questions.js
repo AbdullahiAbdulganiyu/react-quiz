@@ -1,7 +1,7 @@
-function Questions({ qustion }) {
+function Questions({ question }) {
   return (
     <div>
-      <h2>{qustion.question}</h2>
+      <h2>{question.question}</h2>
     </div>
   );
 }
