@@ -62,8 +62,10 @@ function reducer(state, action) {
 }
 
 export default function App() {
-  const [{ questions, status, index, answer, points, highScore }, dispatch] =
-    useReducer(reducer, initialState);
+  const [
+    { questions, status, index, answer, points, highScore, secondsRemaining },
+    dispatch,
+  ] = useReducer(reducer, initialState);
 
   const numQuestions = questions.length;
   const maxPossiblePoints = questions.reduce(
@@ -102,7 +104,7 @@ export default function App() {
               answer={answer}
             />
             <Footer>
-              <Timer dispatch={dispatch} />
+              <Timer dispatch={dispatch} secondsRemaining={secondsRemaining} />
               <NextButton
                 dispatch={dispatch}
                 answer={answer}

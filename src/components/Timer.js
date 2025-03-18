@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-function Timer(dispatch) {
+function Timer({ dispatch, secondsremaining }) {
   return (
     <div className="timer">
       {useEffect(
