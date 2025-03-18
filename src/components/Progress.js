@@ -1,8 +1,8 @@
-function Progress({ index, numQuestion }) {
+function Progress({ index, numQuestions }) {
   return (
     <header className="progress">
       <p>
-        Question {index}/{numQuestion}
+        Question {index}/{numQuestions}
       </p>
     </header>
   );
