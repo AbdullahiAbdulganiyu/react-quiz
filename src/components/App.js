@@ -8,6 +8,7 @@ import Questions from "./Questions";
 import NextButton from "./NextButton";
 import Progress from "./Progress";
 import FinishScreen from "./FinishScreen";
+import Restart from "./Restart";
 
 const initialState = {
   questions: [],
@@ -102,11 +103,14 @@ export default function App() {
           </>
         )}
         {status === "finished" && (
-          <FinishScreen
-            points={points}
-            maxPossiblePoints={maxPossiblePoints}
-            highScore={highScore}
-          />
+          <>
+            <FinishScreen
+              points={points}
+              maxPossiblePoints={maxPossiblePoints}
+              highScore={highScore}
+            />
+            <Restart />
+          </>
         )}
       </Main>
     </div>
