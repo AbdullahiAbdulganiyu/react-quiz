@@ -2,7 +2,7 @@ function Progress({ index, numQuestions }) {
   return (
     <header className="progress">
       <p>
-        Question {index}/{numQuestions}
+        Question <strong>{index + 1}</strong>/{numQuestions}
       </p>
     </header>
   );
