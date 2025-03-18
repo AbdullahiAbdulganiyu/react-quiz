@@ -1,5 +1,5 @@
 function Timer() {
-  return <div>Timer</div>;
+  return <div className="timer">Timer</div>;
 }
 
 export default Timer;
