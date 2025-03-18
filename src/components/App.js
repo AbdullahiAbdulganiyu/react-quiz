@@ -6,6 +6,7 @@ import Error from "./Error";
 import StartScreen from "./StartScreen";
 import Questions from "./Questions";
 import NextButton from "./NextButton";
+import Progress from "./Progress";
 
 const initialState = {
   questions: [],
@@ -69,6 +70,7 @@ export default function App() {
         )}
         {status === "active" && (
           <>
+            <Progress index={index} numQuestion={numQuestion} />
             <Questions
               question={questions[index]}
               dispatch={dispatch}
