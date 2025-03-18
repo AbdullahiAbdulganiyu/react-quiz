@@ -7,11 +7,14 @@ function FinishScreen({ points, maxPossiblePoints, highScore }) {
   if (percentage >= 0 && percentage < 50) emoji = "🙃";
   if (percentage === 0) emoji = "🤦‍♂️";
   return (
-    <p className="result">
-      <span>{emoji}</span>You Scored {points} out of {maxPossiblePoints} (
-      {Math.ceil(percentage)}
-      %)
-    </p>
+    <>
+      <p className="result">
+        <span>{emoji}</span>You Scored {points} out of {maxPossiblePoints} (
+        {Math.ceil(percentage)}
+        %)
+      </p>
+      <p className="highscore">(HighScore: {highScore})</p>
+    </>
   );
 }
 
