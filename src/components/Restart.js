@@ -1,5 +1,12 @@
-function Restart() {
-  return <button className="btn btn-ui">Restart Quiz</button>;
+function Restart({ dispatch }) {
+  return (
+    <button
+      className="btn btn-ui"
+      onClick={() => dispatch({ type: "restart" })}
+    >
+      Restart Quiz
+    </button>
+  );
 }
 
 export default Restart;
