@@ -45,7 +45,7 @@ function reducer(state, action) {
 }
 
 export default function App() {
-  const [{ questions, status, index, answer }, dispatch] = useReducer(
+  const [{ questions, status, index, answer, points }, dispatch] = useReducer(
     reducer,
     initialState
   );
@@ -70,7 +70,11 @@ export default function App() {
         )}
         {status === "active" && (
           <>
-            <Progress index={index} numQuestions={numQuestions} />
+            <Progress
+              index={index}
+              numQuestions={numQuestions}
+              points={points}
+            />
             <Questions
               question={questions[index]}
               dispatch={dispatch}

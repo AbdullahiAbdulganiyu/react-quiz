@@ -1,4 +1,4 @@
-function Progress({ index, numQuestions }) {
+function Progress({ index, numQuestions, points }) {
   return (
     <header className="progress">
       <p>
